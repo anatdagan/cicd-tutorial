@@ -6,8 +6,9 @@ const port = 8080;
 app.get("/env", (req, res) => {
   res.send(process.env);
 });
+
 app.get("/", (req, res) => {
-  res.send(process.env.MESSAGE || "HELLO WORLD");
+  res.send(process.env.MESSAGE || "HELLO WORLD Anat says hi");
 });
 
 app.listen(port, () => {
