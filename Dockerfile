@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM alpine:node
 WORKDIR code
 COPY package.json .
 RUN 'npm install'
